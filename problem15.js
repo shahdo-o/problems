@@ -1,14 +1,10 @@
-l=5;//5*4*3*2
-function rec(l)
-{   
-  if(l===1)
-  {
-    return 1;
+l = 5 //5*4*3*2
+function rec(l) {
+  if (l === 1) {
+    return 1
+  } else {
+    return l * rec(l - 1)
   }
-  else
-  {
-    return (l*rec(l-1));
-  }
-
-};
-console.log(rec(l));
+}
+console.log(rec(l))
+// yep as i want
